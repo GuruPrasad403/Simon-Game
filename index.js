@@ -35,7 +35,7 @@ function handlerfunction(e){
    checkAnswer(userClickedPattern.length-1)
 }
 function playSound(s){
-    let audio = new Audio(`/${s}.mp3`)
+    let audio = new Audio(`${s}.mp3`)
     audio.play();
 }
 
@@ -59,7 +59,7 @@ console.log("sucess")
     }
 }
 else{
-    let wrong = new Audio("./wrong.mp3");
+    let wrong = new Audio("wrong.mp3");
     wrong.play();
     body.classList.add("game-over");
     setTimeout(()=>body.classList.remove("game-over"),200)
