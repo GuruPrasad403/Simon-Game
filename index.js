@@ -35,7 +35,7 @@ function handlerfunction(e){
    checkAnswer(userClickedPattern.length-1)
 }
 function playSound(s){
-    let audio = new Audio(`/${s}.mp3`)
+    let audio = new Audio(`./${s}.mp3`)
     audio.play();
 }
 
